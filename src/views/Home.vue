@@ -1,18 +1,29 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div class="way_btn" @click="clickBtn(1)">方式一、prop和$emit</div>
+    <div class="way_btn" @click="clickBtn(2)">方式二、prop和$emit</div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
-
 export default {
   name: "Home",
-  components: {
-    HelloWorld
+  methods: {
+    clickBtn(index = 1) {
+      this.$router.push({
+        name: "way" + index
+      });
+    }
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.way_btn {
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+</style>
