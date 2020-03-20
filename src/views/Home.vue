@@ -2,7 +2,8 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
     <div class="way_btn" @click="clickBtn(1)">方式一、prop和$emit</div>
-    <div class="way_btn" @click="clickBtn(2)">方式二、prop和$emit</div>
+    <div class="way_btn" @click="clickBtn(2)">方式二、sync</div>
+    <div class="way_btn" @click="clickBtn(3)">方式三、EventBus</div>
   </div>
 </template>
 

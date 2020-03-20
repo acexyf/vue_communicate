@@ -43,3 +43,8 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+div {
+  padding: 10px 0;
+}
+</style>
