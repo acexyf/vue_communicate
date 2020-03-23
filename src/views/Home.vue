@@ -4,6 +4,7 @@
     <div class="way_btn" @click="clickBtn(1)">方式一、prop和$emit</div>
     <div class="way_btn" @click="clickBtn(2)">方式二、sync</div>
     <div class="way_btn" @click="clickBtn(3)">方式三、EventBus</div>
+    <div class="way_btn" @click="clickBtn(4)">方式四、$attrs和$listeners</div>
   </div>
 </template>
 
