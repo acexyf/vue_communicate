@@ -5,6 +5,7 @@
     <div class="way_btn" @click="clickBtn(2)">方式二、sync</div>
     <div class="way_btn" @click="clickBtn(3)">方式三、EventBus</div>
     <div class="way_btn" @click="clickBtn(4)">方式四、$attrs和$listeners</div>
+    <div class="way_btn" @click="clickBtn(5)">方式五、Vux</div>
   </div>
 </template>
 
