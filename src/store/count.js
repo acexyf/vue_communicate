@@ -4,10 +4,10 @@ export default {
     num: 1
   },
   mutations: {
-    addnum(state) {
+    ADD_NUM(state) {
       state.num = state.num + 1;
     },
-    subnum(state) {
+    SUB_NUM(state) {
       state.num = state.num - 1;
     }
   }

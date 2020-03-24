@@ -15,10 +15,10 @@ export default {
   },
   methods: {
     clickAdd() {
-      this.$store.commit("count/addnum");
+      this.$store.commit("count/ADD_NUM");
     },
     clickSub() {
-      this.$store.commit("count/subnum");
+      this.$store.commit("count/SUB_NUM");
     }
   }
 };
