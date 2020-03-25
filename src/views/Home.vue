@@ -8,6 +8,7 @@
     <div class="way_btn" @click="clickBtn(5)">方式五、Vux</div>
     <div class="way_btn" @click="clickBtn(6)">方式六、Ref</div>
     <div class="way_btn" @click="clickBtn(7)">方式七、provide和inject</div>
+    <div class="way_btn" @click="clickBtn(8)">方式八、$parent和$children</div>
   </div>
 </template>
 
