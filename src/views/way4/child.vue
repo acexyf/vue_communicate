@@ -20,7 +20,7 @@ export default {
   mounted() {
     console.log(this.$listeners);
   },
-  inheritAttrs: true,
+  inheritAttrs: false,
   methods: {
     clickMsg() {
       let { childMsg } = this;
