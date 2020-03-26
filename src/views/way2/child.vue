@@ -1,10 +1,9 @@
 <template>
   <div>
     <div @click="clickRevert">点击更新字符串：{{ msg }}</div>
-    <div>点击插入随机字符串</div>
-    <template v-for="(item, index) in list">
-      <div :key="index" @click="clickInsert(index)">{{ item.name }}</div>
-    </template>
+    <div>当前值：{{ num }}</div>
+    <div @click="clickOpt('add')" class="opt">+</div>
+    <div @click="clickOpt('sub')" class="opt">-</div>
   </div>
 </template>
 <script>
@@ -15,11 +14,9 @@ export default {
       type: String,
       default: ""
     },
-    list: {
-      type: Array,
-      default() {
-        return [];
-      }
+    num: {
+      type: Number,
+      default: 0
     }
   },
   methods: {
@@ -34,17 +31,15 @@ export default {
           .join("")
       );
     },
-    clickInsert(index = 0) {
-      let { list } = this;
-      list[index].name += parseInt(Math.random() * 10);
-      console.log(list);
-      this.$emit("update:list", list);
+    clickOpt(type = "") {
+      let { num } = this;
+      if (type == "add") {
+        num++;
+      } else {
+        num--;
+      }
+      this.$emit("update:num", num);
     }
   }
 };
 </script>
-<style lang="scss" scoped>
-div {
-  padding: 10px 0;
-}
-</style>

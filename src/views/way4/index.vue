@@ -1,6 +1,7 @@
 <template>
   <div>
     <Child
+      :notUse="'not-use'"
       :childMsg="childMsg"
       :grandChildMsg="grandChildMsg"
       @onChildMsg="onChildMsg"

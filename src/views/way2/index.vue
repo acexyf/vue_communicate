@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Child :msg.sync="msg" :list.sync="list"></Child>
+    <Child :msg.sync="msg" :num.sync="num"></Child>
   </div>
 </template>
 <script>
@@ -13,10 +13,9 @@ export default {
   data() {
     return {
       msg: "hello every guys",
-      list: [{ name: "好" }, { name: "好" }, { name: "学" }, { name: "习" }]
+      num: 0
     };
-  },
-  methods: {}
+  }
 };
 </script>
 <style lang="scss" scoped></style>
