@@ -7,7 +7,6 @@
   </div>
 </template>
 <script>
-import bus from "@/utils/eventBus";
 export default {
   name: "Child2",
   data() {
@@ -16,13 +15,13 @@ export default {
     };
   },
   mounted() {
-    bus.$on("getMsg2", res => {
+    this.$bus.$on("getMsg2", res => {
       this.msgList.push(res);
     });
   },
   methods: {
     clickSend() {
-      bus.$emit("getMsg1", "hello" + parseInt(Math.random() * 20));
+      this.$bus.$emit("getMsg1", "hello" + parseInt(Math.random() * 20));
     }
   }
 };
