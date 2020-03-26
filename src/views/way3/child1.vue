@@ -1,5 +1,6 @@
 <template>
   <div>
+    <div>child1</div>
     <div class="send" @click="clickSend">发送消息</div>
     <template v-for="(item, index) in msgList">
       <div :key="index">{{ item }}</div>
@@ -7,7 +8,6 @@
   </div>
 </template>
 <script>
-
 export default {
   name: "Child1",
   data() {
@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     clickSend() {
-      this.$bus.$emit("getMsg2", "hello" + parseInt(Math.random() * 20));
+      this.$bus.$emit("getMsg2", "hello from1:" + parseInt(Math.random() * 20));
     }
   }
 };
