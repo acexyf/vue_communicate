@@ -12,6 +12,9 @@ export default {
   methods: {
     addNum() {
       this.num += 1;
+    },
+    subNum() {
+      this.num -= 1;
     }
   }
 };
