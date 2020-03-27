@@ -9,7 +9,7 @@ export default {
   },
   mounted() {
     console.log(this.$parent.show());
-    console.log(this.$children, "$children");
+    console.log("Child", this.$children, this.$parent);
   }
 };
 </script>
