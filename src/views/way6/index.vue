@@ -24,15 +24,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.opt {
-  width: 40px;
-  height: 40px;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #333;
-  margin: 10px 20px 0 0;
-  cursor: pointer;
-  font-size: 16px;
-}
+
 </style>
