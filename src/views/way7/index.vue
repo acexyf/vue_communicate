@@ -5,7 +5,6 @@
 </template>
 <script>
 import Child from "./child";
-import { setTimeout } from "timers";
 export default {
   name: "way7",
   components: { Child },
